@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="q3.css">
+  <title>Image Gallery</title>
+  <title>Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .gallery-container {
+      width: 80%;
+    }
+    .gallery-heading {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="gallery-heading">
+      <h2>Explore Our Beautiful Image Gallery</h2>
+    </div>
+  <div class="gallery">
+    <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17160695/pexels-photo-17160695/free-photo-of-telephone-booths-in-london-england.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+      <img src="https://images.pexels.com/photos/17160695/pexels-photo-17160695/free-photo-of-telephone-booths-in-london-england.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 1">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17227300/pexels-photo-17227300/free-photo-of-ham-and-cheese-with-crackers-on-the-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+      <img src="https://images.pexels.com/photos/17227300/pexels-photo-17227300/free-photo-of-ham-and-cheese-with-crackers-on-the-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 2">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/10821218/pexels-photo-10821218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+      <img src="https://images.pexels.com/photos/10821218/pexels-photo-10821218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+    </div>
+    <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17813816/pexels-photo-17813816.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load')">
+        <img src="https://images.pexels.com/photos/17813816/pexels-photo-17813816.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/12297472/pexels-photo-12297472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/12297472/pexels-photo-12297472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/16848960/pexels-photo-16848960/free-photo-of-woman-in-a-hijab-reading-koran.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/16848960/pexels-photo-16848960/free-photo-of-woman-in-a-hijab-reading-koran.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/15031199/pexels-photo-15031199/free-photo-of-lake-in-valley.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/15031199/pexels-photo-15031199/free-photo-of-lake-in-valley.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17838732/pexels-photo-17838732/free-photo-of-nature-field-animal-farm.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/17838732/pexels-photo-17838732/free-photo-of-nature-field-animal-farm.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/16697128/pexels-photo-16697128/free-photo-of-woman-in-dress-posing-in-canyon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/16697128/pexels-photo-16697128/free-photo-of-woman-in-dress-posing-in-canyon.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/17850150/pexels-photo-17850150/free-photo-of-panaderia-mexicana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17823726/pexels-photo-17823726/free-photo-of-kitten-girls-vietnam.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/17823726/pexels-photo-17823726/free-photo-of-kitten-girls-vietnam.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+      <div class="thumbnail" onclick="openLightbox('https://images.pexels.com/photos/17491661/pexels-photo-17491661/free-photo-of-blonde-woman-taking-pictures-with-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.pexels.com/photos/17491661/pexels-photo-17491661/free-photo-of-blonde-woman-taking-pictures-with-camera.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+      </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <img src="" alt="Full-sized Image" id="lightbox-image">
+  </div>
+
+  <script src="q3.js"></script>
+</body>
+</html>
